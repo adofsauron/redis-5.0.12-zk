@@ -43,7 +43,7 @@ int zklinkTryCreateOldMasterPath(struct redisServer* server)
     }
 
     char path[CLUSTER_NAMELEN+9] = {0};
-    snprintf(path, CLUSTER_NAMELEN+1 , "/replace-%s", zkc->replace_path);
+    snprintf(path, CLUSTER_NAMELEN+9 , "/replace-%s", zkc->replace_path);
 
     char data[CLUSTER_NAMELEN] = {0};
     snprintf(data, CLUSTER_NAMELEN , "%s", myself->name);
@@ -72,7 +72,7 @@ int zklinkTryCreateOldMasterPath(struct redisServer* server)
 
 void zklinkUpdateStateOnWatch(zklinkClient* zkc, const char* path, int type)
 {
-    serverLog(LL_VERBOSE, "zookeeper, Watcher zklinkUpdateStateOnWatch, path = [%s]", path);
+    serverLog(LL_VERBOSE, "zookeeper, Watcher zklinkUpdateStateOnWatch, path = [%s], type = [%d]", path, type);
 
     struct redisServer* server = zkc->redis_server;
     clusterNode* myself = server->cluster->myself;
@@ -90,38 +90,50 @@ void zklinkUpdateStateOnWatch(zklinkClient* zkc, const char* path, int type)
     snprintf(master_path, CLUSTER_NAMELEN+1 , "/%s", master->name);
 
     if (strncmp(path, master_path, CLUSTER_NAMELEN+1)) {
-        serverLog(LL_DEBUG, "zookeeper, Watcher strncmp not equal, path = [%s], master->name = [%s]", path, master_path);
+        serverLog(LL_VERBOSE, "zookeeper, Watcher strncmp not equal, path = [%s], master->name = [%s]", path, master_path);
         return;
     }
 
+    zkc->zk_on_wath = 0; // watch触发后需要继续添加
+
     if (ZOO_CREATED_EVENT == type) {
-        serverLog(LL_VERBOSE, "zookeeper, Watcher, master path = [%s] be created", path);
+        serverLog(LL_VERBOSE, "zookeeper, Watcher type = ZOO_CREATED_EVENT, master path = [%s] be created", path);
         // TODO:
 
         return;
     } 
     
     if (ZOO_DELETED_EVENT == type) {
-        serverLog(LL_VERBOSE, "zookeeper, Watcher, master path = [%s] be deleted, mark master = [%s] as fail", path, master->name);
+        serverLog(LL_VERBOSE, "zookeeper, Watcher type = ZOO_DELETED_EVENT, master path = [%s] be deleted, mark master = [%s] as fail", path, master->name);
 
         master->flags &= ~CLUSTER_NODE_PFAIL;
         master->flags |= CLUSTER_NODE_FAIL;
         clusterSendFail(master->name);
-
         return;
     }
 
-    serverLog(LL_VERBOSE, "zookeeper, Watcher, zklinkUpdateStateOnWatch un process, path = [%s], type = [%d]", path, type);
+    serverLog(LL_VERBOSE, "zookeeper, Watcher, zklinkUpdateStateOnWatch don't process, path = [%s], type = [%d]", path, type);
 }
 
 void zklinkWatcher(zhandle_t* zh, int type, int state, const char* path, void* watcherCtx)
 {
-    zklinkClient* zkc = (zklinkClient*) (watcherCtx);
+    serverLog(LL_VERBOSE, "zookeeper, Watcher, type=[%d] state=[%d] path=[%s]\n", type, state, path);
 
-    serverLog(LL_DEBUG, "zookeeper, Watcher, type=[%d] state=[%d] path=[%s] zkstate=[%d] \n", type, state, path, zkc->zkstate);
+    zklinkClient* zkc = (zklinkClient*) (watcherCtx);
+    struct redisServer* server = zkc->redis_server;
+
+    if ((ZOO_SESSION_EVENT == type) && (ZOO_CONNECTING_STATE == state) && ( (!path) || (0 == strlen(path)))) {
+        zkc->zkstate = ZKS_DIS_CONNECT;
+        zkc->zk_create_path = 0;
+        zkc->zk_on_wath = 0;
+
+        serverLog(LL_WARNING, "zookeeper, Watcher broken conn, disconnect to zk server[%s:%d], type = ZOO_SESSION_EVENT, state = ZOO_CONNECTING_STATE, path = NULL",
+            server->zk_host, server->zk_port);
+        return;
+    }
 
     if (ZOO_CONNECTED_STATE != state) {
-        serverLog(LL_VERBOSE, "zookeeper, Watcher, zklinkWatcher not process, path = [%s], state = [%d]", path, state);
+        serverLog(LL_VERBOSE, "zookeeper, Watcher, zklinkWatcher type [%d] state [%d] not ZOO_CONNECTED_STATE, don't process, path = [%s]", type, state, path);
         return;
     }
 
@@ -157,6 +169,11 @@ zklinkClient* zklinkCreateClient(struct redisServer* server)
 
 void zklinkInitServer(zklinkClient* zkc)
 {
+    if (zkc->zh) {
+        zookeeper_close(zkc->zh);
+        zkc->zh = NULL;
+    }
+
     struct redisServer* server = zkc->redis_server;
 
     char addr[256] = {0};
@@ -176,11 +193,11 @@ void zklinkInitServer(zklinkClient* zkc)
 
 void zklinkCron(struct redisServer* server)
 {
-    if (!server->zk_host) {
+    if ((!server->zk_host) || (server->zk_port <= 0)) {
         return;
     }
 
-    if ((server->zk_host) && (server->zk_port > 0) && (!server->zklc)) {
+    if (!server->zklc) {
         server->zklc = zklinkCreateClient(server);
         return;
     }
@@ -191,7 +208,16 @@ void zklinkCron(struct redisServer* server)
 
     zklinkClient* zkc = server->zklc;
 
+    if (ZKS_WAIT_CONNECT == zkc->zkstate) {
+        return;
+    }
+
     if (ZKS_UNINIT == zkc->zkstate) {
+        zklinkInitServer(zkc);
+        return;
+    }
+
+    if (ZKS_DIS_CONNECT == zkc->zkstate) {
         zklinkInitServer(zkc);
         return;
     }
@@ -244,7 +270,7 @@ void zklinkCreatePath(zklinkClient* zkc)
     }
 
     if ((zkc->replace_path_del_tm) && ((zkc->replace_path_del_tm < mstime()))) {
-        serverLog(LL_WARNING, "zookeeper, start del replace path, path = [%s], replace_path_del_tm = [%lld]", zkc->replace_path, zkc->replace_path_del_tm);
+        serverLog(LL_VERBOSE, "zookeeper, start del replace path, path = [%s], replace_path_del_tm = [%lld]", zkc->replace_path, zkc->replace_path_del_tm);
         zklinkDelOldMasterPath(zkc);
         zkc->replace_path_del_tm = 0;
     }
@@ -276,7 +302,7 @@ void zklinkDelOldMasterPath(zklinkClient* zkc)
     }
 
     char path[CLUSTER_NAMELEN+9] = {0};
-    snprintf(path, CLUSTER_NAMELEN+1 , "/replace-%s", zkc->replace_path);
+    snprintf(path, CLUSTER_NAMELEN+9 , "/replace-%s", zkc->replace_path);
 
     int rc = zoo_delete(zkc->zh, path, -1);
     if ((ZNONODE != rc) && (ZOK != rc)) {
