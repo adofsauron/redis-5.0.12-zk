@@ -321,7 +321,6 @@ void zklinkWatchPath(zklinkClient* zkc)
     clusterNode* myself = server->cluster->myself;
 
     if (nodeIsMaster(myself)) {
-        zkc->zk_on_wath = 0;
         return;
     }
 
