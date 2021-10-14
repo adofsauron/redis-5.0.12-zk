@@ -1,1 +1,1 @@
-redis-5.0.12 reduce cluster
+redis-5.0.12 cluster with zk
