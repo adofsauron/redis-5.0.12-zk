@@ -58,6 +58,18 @@
     <Filter Include="deps\gperftools-2.9.1\src\windows\gperftools">
       <UniqueIdentifier>{4678f5bc-d5c8-47da-abab-5a0fbe1421f7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\modules\redisraft">
+      <UniqueIdentifier>{2929d22f-0071-4803-a906-7cf11ddf321b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\redisraft\src">
+      <UniqueIdentifier>{8936be4a-56b4-4b36-8066-55f7c0e1a663}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\redisraft\tests">
+      <UniqueIdentifier>{2b932f84-2141-4bd7-b7d3-960252965ab9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\redisraft\docs">
+      <UniqueIdentifier>{bb7ae812-2a1b-4ac1-8d3d-154bb034257e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\src\addrvec.c">
@@ -657,6 +669,78 @@
     <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\vdso_support.cc">
       <Filter>deps\gperftools-2.9.1\src\base</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\src\cluster.c">
+      <Filter>src\modules\redisraft\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\src\commands.c">
+      <Filter>src\modules\redisraft\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\src\common.c">
+      <Filter>src\modules\redisraft\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\src\config.c">
+      <Filter>src\modules\redisraft\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\src\connection.c">
+      <Filter>src\modules\redisraft\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\src\crc16.c">
+      <Filter>src\modules\redisraft\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\src\fsync.c">
+      <Filter>src\modules\redisraft\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\src\join.c">
+      <Filter>src\modules\redisraft\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\src\log.c">
+      <Filter>src\modules\redisraft\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\src\multi.c">
+      <Filter>src\modules\redisraft\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\src\node.c">
+      <Filter>src\modules\redisraft\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\src\node_addr.c">
+      <Filter>src\modules\redisraft\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\src\proxy.c">
+      <Filter>src\modules\redisraft\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\src\raft.c">
+      <Filter>src\modules\redisraft\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\src\redisraft.c">
+      <Filter>src\modules\redisraft\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\src\serialization.c">
+      <Filter>src\modules\redisraft\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\src\snapshot.c">
+      <Filter>src\modules\redisraft\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\src\sort.c">
+      <Filter>src\modules\redisraft\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\src\threadpool.c">
+      <Filter>src\modules\redisraft\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\src\util.c">
+      <Filter>src\modules\redisraft\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\tests\main.c">
+      <Filter>src\modules\redisraft\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\tests\test_log.c">
+      <Filter>src\modules\redisraft\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\tests\test_serialization.c">
+      <Filter>src\modules\redisraft\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\tests\test_util.c">
+      <Filter>src\modules\redisraft\tests</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\src\addrvec.h">
@@ -1226,6 +1310,24 @@
     <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\vdso_support.h">
       <Filter>deps\gperftools-2.9.1\src\base</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\src\crc16.h">
+      <Filter>src\modules\redisraft\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\src\hiredis_redismodule.h">
+      <Filter>src\modules\redisraft\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\src\queue.h">
+      <Filter>src\modules\redisraft\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\src\redismodule.h">
+      <Filter>src\modules\redisraft\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\src\redisraft.h">
+      <Filter>src\modules\redisraft\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\src\version.h">
+      <Filter>src\modules\redisraft\src</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\src\hashtable\LICENSE.txt">
@@ -1307,6 +1409,36 @@
     </None>
     <None Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\gperftools\tcmalloc.h.in">
       <Filter>deps\gperftools-2.9.1\src\gperftools</Filter>
+    </None>
+    <None Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\README.md">
+      <Filter>src\modules\redisraft</Filter>
+    </None>
+    <None Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\docs\Deployment.md">
+      <Filter>src\modules\redisraft\docs</Filter>
+    </None>
+    <None Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\docs\Development.md">
+      <Filter>src\modules\redisraft\docs</Filter>
+    </None>
+    <None Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\docs\ExternalSharding.md">
+      <Filter>src\modules\redisraft\docs</Filter>
+    </None>
+    <None Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\docs\Flow.puml">
+      <Filter>src\modules\redisraft\docs</Filter>
+    </None>
+    <None Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\docs\Introduction.md">
+      <Filter>src\modules\redisraft\docs</Filter>
+    </None>
+    <None Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\docs\Sharding.md">
+      <Filter>src\modules\redisraft\docs</Filter>
+    </None>
+    <None Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\docs\TLS.md">
+      <Filter>src\modules\redisraft\docs</Filter>
+    </None>
+    <None Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\docs\TOC.md">
+      <Filter>src\modules\redisraft\docs</Filter>
+    </None>
+    <None Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\docs\Using.md">
+      <Filter>src\modules\redisraft\docs</Filter>
     </None>
   </ItemGroup>
 </Project>
