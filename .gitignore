@@ -1,0 +1,7 @@
+.vscode/
+.vs/
+sln/redis-5.0.12-zk/.vs/
+sln/redis-5.0.12-zk/obj/
+trunk/redis-5.0.12/.vscode/
+trunk/redis-5.0.12/.vs/
+
