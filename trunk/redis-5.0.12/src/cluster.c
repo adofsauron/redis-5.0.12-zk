@@ -1226,6 +1226,11 @@ void markNodeAsFailingIfNeeded(clusterNode *node) {
     int failures;
     int needed_quorum = (server.cluster->size / 2) + 1;
 
+    // TODO: CLUSTER_REDUCE
+    if (server.cluster->size < 3) {
+        needed_quorum -= 1;
+    }
+
     if (!nodeTimedOut(node)) return; /* We can reach it. */
     if (nodeFailed(node)) return; /* Already FAILing. */
 
