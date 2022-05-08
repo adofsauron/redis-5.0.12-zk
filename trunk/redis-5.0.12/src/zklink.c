@@ -117,6 +117,7 @@ void zklinkUpdateStateOnWatch(zklinkClient* zkc, const char* path, int type)
 
 void zklinkWatcher(zhandle_t* zh, int type, int state, const char* path, void* watcherCtx)
 {
+    UNUSED(zh);
     serverLog(LL_VERBOSE, "zookeeper, Watcher, type=[%d] state=[%d] path=[%s]\n", type, state, path);
 
     zklinkClient* zkc = (zklinkClient*) (watcherCtx);
@@ -149,7 +150,8 @@ void zklinkWatcher(zhandle_t* zh, int type, int state, const char* path, void* w
 
 void zklinkCompletion(int rc, const char* value, int value_len, const struct Stat* stat, const void* data)
 {
-    serverLog(LL_DEBUG, "zookeeper, -------completion... value=[%s] value_len=[%d]\n", value, value_len);
+    serverLog(LL_DEBUG, "zookeeper, -------completion... rc=[%d] value=[%s] value_len=[%d] stat.czxid=[%ld] data=[%p]\n", 
+        rc, value, value_len, stat->czxid, data);
 }
 
 zklinkClient* zklinkCreateClient(struct redisServer* server)

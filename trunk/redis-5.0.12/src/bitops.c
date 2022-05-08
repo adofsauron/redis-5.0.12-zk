@@ -1056,8 +1056,8 @@ void bitfieldCommand(client *c) {
                     addReply(c,shared.nullbulk);
                 }
             } else {
-                uint64_t oldval, newval, wrapped, retval;
-                int overflow;
+                uint64_t oldval=0, newval=0, wrapped=0, retval=0;
+                int overflow=0;
 
                 oldval = getUnsignedBitfield(o->ptr,thisop->offset,
                         thisop->bits);
