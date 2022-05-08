@@ -3052,6 +3052,11 @@ void clusterHandleSlaveFailover(void) {
     mstime_t auth_age = mstime() - server.cluster->failover_auth_time;
     int needed_quorum = (server.cluster->size / 2) + 1;
 
+    // TODO: CLUSTER_REDUCE
+    if (server.cluster->size < 3) {
+        needed_quorum -= 1;
+    }
+
     int manual_failover = server.cluster->mf_end != 0 &&
                           server.cluster->mf_can_start;
     mstime_t auth_timeout, auth_retry_time;
@@ -3698,12 +3703,44 @@ void clusterCron(void) {
                 serverLog(LL_DEBUG,"*** NODE %.40s possibly failing",
                     node->name);
 
-                node->flags |= CLUSTER_NODE_PFAIL;
+                // TODO: CLUSTER_REDUCE
+                bool mark_node_fail = false;
+                switch (server.cluster->size)
+                {
+                case 1:
+                    { // 只有一个分片, 则立即置为FAIL
+                        node->flags |= CLUSTER_NODE_FAIL;
+                        mark_node_fail = true;
+                    }
+                    break;
+
+                case 2:
+                    { // 两个分片, 如果是slave检测到则置为PFAIL, 如果是master检测到则置为FAIL
+                        if(nodeIsMaster(myself)) { 
+                            node->flags |= CLUSTER_NODE_FAIL;
+                            mark_node_fail = true;
+                        } else {
+                            node->flags |= CLUSTER_NODE_PFAIL;
+                        }
+                    }
+                    break;
+
+                default:
+                    { // 其他为 >=3 节点以上情况
+                        node->flags |= CLUSTER_NODE_PFAIL;
+                    }
+                    break;
+                }
 
                 serverLog(LL_NOTICE,"$$$ set node to [%s] by check of cluster.size=[%d] self_role=[%s], node: name=[%.40s] ip=[%s] port=[%d]",
-                    "CLUSTER_NODE_PFAIL",
+                    mark_node_fail ? "CLUSTER_NODE_FAIL" : "CLUSTER_NODE_PFAIL",
                     server.cluster->size, (nodeIsMaster(myself)) ? "master" : "slave",
                     node->name, node->ip, node->port);
+
+                // node marked fail and myself is master then send fail ASAP
+                if (mark_node_fail && (server.cluster->size > 1)) { 
+                    clusterSendFail(node->name); 
+                }
 
                 update_state = 1;
             }
