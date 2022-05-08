@@ -3010,15 +3010,15 @@ void clusterFailoverReplaceYourMaster(void) {
             oldmaster->name, oldmaster->ip, oldmaster->port);
 
     // TODO: CLUSTER_REDUCE onClusterFailoverReplaceYourMaster
-    if(!onClusterFailoverReplaceYourMaster(oldmaster)) {
-        serverLog(LL_NOTICE,"$$$ onClusterFailoverReplaceYourMaster fail, myself: name=[%.40s] ip=[%s] port=[%d], "
-            "oldmaster: name=[%.40s] ip=[%s] port=[%d]", 
-            myself->name, myself->ip, myself->port, 
-            oldmaster->name, oldmaster->ip, oldmaster->port);
+    // if(!onClusterFailoverReplaceYourMaster(oldmaster)) {
+    //     serverLog(LL_NOTICE,"$$$ onClusterFailoverReplaceYourMaster fail, myself: name=[%.40s] ip=[%s] port=[%d], "
+    //         "oldmaster: name=[%.40s] ip=[%s] port=[%d]", 
+    //         myself->name, myself->ip, myself->port, 
+    //         oldmaster->name, oldmaster->ip, oldmaster->port);
 
-        clusterLogCantFailover(CLUSTER_CANT_FAILOVER_ON_REPLACE_OLDMASTER_FAIL);
-        return;
-    }
+    //     clusterLogCantFailover(CLUSTER_CANT_FAILOVER_ON_REPLACE_OLDMASTER_FAIL);
+    //     return;
+    // }
 
     /* 1) Turn this node into a master. */
     clusterSetNodeAsMaster(myself);
