@@ -1,0 +1,535 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{1724f055-7318-4fc0-8bce-4b3fe3148a16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps">
+      <UniqueIdentifier>{7c307a38-ae25-4a62-b626-fbdbbb3d35e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\zkcli">
+      <UniqueIdentifier>{db897b3c-e1d2-4a69-b159-2dc12382729b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\zkcli\zookeeper-client-c">
+      <UniqueIdentifier>{50dbbe51-b130-49d0-8fd7-3d66a272de31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\zkcli\zookeeper-client-c\include">
+      <UniqueIdentifier>{1c1e1a45-095d-4f31-95f3-96a412c9f9fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\zkcli\zookeeper-client-c\src">
+      <UniqueIdentifier>{de45a91d-c3b2-44f9-be4e-fa5e34f1f907}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\zkcli\zookeeper-client-c\src\hashtable">
+      <UniqueIdentifier>{1ed83536-eaaf-441a-9063-376442e95522}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{92b1add2-940e-4bf4-a51f-545551bb1d6b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\src\addrvec.c">
+      <Filter>deps\zkcli\zookeeper-client-c\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\src\cli.c">
+      <Filter>deps\zkcli\zookeeper-client-c\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\src\load_gen.c">
+      <Filter>deps\zkcli\zookeeper-client-c\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\src\mt_adaptor.c">
+      <Filter>deps\zkcli\zookeeper-client-c\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\src\recordio.c">
+      <Filter>deps\zkcli\zookeeper-client-c\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\src\st_adaptor.c">
+      <Filter>deps\zkcli\zookeeper-client-c\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\src\winport.c">
+      <Filter>deps\zkcli\zookeeper-client-c\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\src\zk_hashtable.c">
+      <Filter>deps\zkcli\zookeeper-client-c\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\src\zk_log.c">
+      <Filter>deps\zkcli\zookeeper-client-c\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\src\zookeeper.c">
+      <Filter>deps\zkcli\zookeeper-client-c\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\src\hashtable\hashtable.c">
+      <Filter>deps\zkcli\zookeeper-client-c\src\hashtable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\src\hashtable\hashtable_itr.c">
+      <Filter>deps\zkcli\zookeeper-client-c\src\hashtable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\adlist.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\ae.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\ae_epoll.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\ae_evport.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\ae_kqueue.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\ae_select.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\anet.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\aof.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\bio.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\bitops.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\blocked.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\childinfo.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\cluster.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\config.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\crc16.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\crc64.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\db.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\debug.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\defrag.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\dict.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\endianconv.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\evict.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\expire.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\geo.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\geohash.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\geohash_helper.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\hyperloglog.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\intset.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\latency.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\lazyfree.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\listpack.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\localtime.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\lolwut.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\lolwut5.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\lzf_c.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\lzf_d.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\memtest.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\module.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\multi.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\networking.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\notify.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\object.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\pqsort.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\pubsub.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\quicklist.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\rand.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\rax.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\rdb.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\redis-benchmark.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\redis-check-aof.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\redis-check-rdb.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\redis-cli.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\release.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\replication.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\rio.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\scripting.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\sds.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\sentinel.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\server.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\setproctitle.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\sha1.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\siphash.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\slowlog.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\sort.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\sparkline.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\syncio.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\t_hash.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\t_list.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\t_set.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\t_stream.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\t_string.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\t_zset.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\util.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\ziplist.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\zipmap.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\zklink.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\zmalloc.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\helloblock.c">
+      <Filter>src\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\hellocluster.c">
+      <Filter>src\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\hellodict.c">
+      <Filter>src\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\hellotimer.c">
+      <Filter>src\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\hellotype.c">
+      <Filter>src\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\helloworld.c">
+      <Filter>src\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\testmodule.c">
+      <Filter>src\modules</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\src\addrvec.h">
+      <Filter>deps\zkcli\zookeeper-client-c\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\src\winport.h">
+      <Filter>deps\zkcli\zookeeper-client-c\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\src\zk_adaptor.h">
+      <Filter>deps\zkcli\zookeeper-client-c\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\src\zk_hashtable.h">
+      <Filter>deps\zkcli\zookeeper-client-c\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\src\hashtable\hashtable.h">
+      <Filter>deps\zkcli\zookeeper-client-c\src\hashtable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\src\hashtable\hashtable_itr.h">
+      <Filter>deps\zkcli\zookeeper-client-c\src\hashtable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\src\hashtable\hashtable_private.h">
+      <Filter>deps\zkcli\zookeeper-client-c\src\hashtable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\include\config.h">
+      <Filter>deps\zkcli\zookeeper-client-c\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\include\proto.h">
+      <Filter>deps\zkcli\zookeeper-client-c\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\include\recordio.h">
+      <Filter>deps\zkcli\zookeeper-client-c\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\include\win_getopt.h">
+      <Filter>deps\zkcli\zookeeper-client-c\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\include\winconfig.h">
+      <Filter>deps\zkcli\zookeeper-client-c\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\include\zookeeper.h">
+      <Filter>deps\zkcli\zookeeper-client-c\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\include\zookeeper.jute.h">
+      <Filter>deps\zkcli\zookeeper-client-c\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\include\zookeeper_log.h">
+      <Filter>deps\zkcli\zookeeper-client-c\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\include\zookeeper_version.h">
+      <Filter>deps\zkcli\zookeeper-client-c\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\adlist.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\ae.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\anet.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\asciilogo.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\atomicvar.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\bio.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\cluster.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\config.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\crc64.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\debugmacro.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\dict.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\endianconv.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\fmacros.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\geo.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\geohash.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\geohash_helper.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\help.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\intset.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\latency.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\listpack.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\listpack_malloc.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\lzf.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\lzfP.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\pqsort.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\quicklist.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\rand.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\rax.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\rax_malloc.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\rdb.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\redisassert.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\redismodule.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\rio.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\sds.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\sdsalloc.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\server.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\sha1.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\slowlog.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\solarisfixes.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\sparkline.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\stream.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\testhelp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\util.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\version.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\ziplist.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\zipmap.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\zklink.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\zmalloc.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\src\hashtable\LICENSE.txt">
+      <Filter>deps\zkcli\zookeeper-client-c\src\hashtable</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\trunk\redis-5.0.12\src\Makefile">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\..\trunk\redis-5.0.12\src\mkreleasehdr.sh">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\..\trunk\redis-5.0.12\src\redis-trib.rb">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\..\trunk\redis-5.0.12\src\valgrind.sup">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\..\trunk\redis-5.0.12\src\modules\gendoc.rb">
+      <Filter>src\modules</Filter>
+    </None>
+    <None Include="..\..\trunk\redis-5.0.12\src\modules\Makefile">
+      <Filter>src\modules</Filter>
+    </None>
+  </ItemGroup>
+</Project>
