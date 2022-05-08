@@ -234,6 +234,17 @@
     <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\hellotimer.c" />
     <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\hellotype.c" />
     <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\helloworld.c" />
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\src\raft_log.c" />
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\src\raft_node.c" />
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\src\raft_server.c" />
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\src\raft_server_properties.c" />
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\tests\CuTest.c" />
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\tests\mock_send_functions.c" />
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\tests\test_log.c" />
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\tests\test_node.c" />
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\tests\test_scenario.c" />
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\tests\test_server.c" />
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\tests\test_snapshotting.c" />
     <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\src\cluster.c" />
     <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\src\commands.c" />
     <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\src\common.c" />
@@ -465,6 +476,12 @@
     <ClInclude Include="..\..\trunk\redis-5.0.12\src\listpack_malloc.h" />
     <ClInclude Include="..\..\trunk\redis-5.0.12\src\lzf.h" />
     <ClInclude Include="..\..\trunk\redis-5.0.12\src\lzfP.h" />
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\include\raft.h" />
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\include\raft_log.h" />
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\include\raft_private.h" />
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\include\raft_types.h" />
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\tests\CuTest.h" />
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\tests\mock_send_functions.h" />
     <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\src\crc16.h" />
     <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\src\hiredis_redismodule.h" />
     <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\src\queue.h" />
@@ -533,6 +550,11 @@
     <None Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\docs\TLS.md" />
     <None Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\docs\TOC.md" />
     <None Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\docs\Using.md" />
+    <None Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\README.rst" />
+    <None Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\tests\log_fuzzer.py" />
+    <None Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\tests\make-tests.sh" />
+    <None Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\tests\raft_cffi.py" />
+    <None Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\tests\virtraft2.py" />
     <None Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\README.md" />
     <None Include="..\..\trunk\redis-5.0.12\src\redis-trib.rb" />
   </ItemGroup>

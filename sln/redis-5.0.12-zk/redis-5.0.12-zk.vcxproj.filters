@@ -70,6 +70,18 @@
     <Filter Include="src\modules\redisraft\docs">
       <UniqueIdentifier>{bb7ae812-2a1b-4ac1-8d3d-154bb034257e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\modules\redisraft\raft">
+      <UniqueIdentifier>{5919b84a-c066-42e7-a56c-1e4d1ed2a633}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\redisraft\raft\src">
+      <UniqueIdentifier>{b3a1a2f5-dbc4-457b-bd73-bcdab3e514ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\redisraft\raft\inclucde">
+      <UniqueIdentifier>{e665e069-6620-4495-a1c3-f3062b3f33cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\redisraft\raft\tests">
+      <UniqueIdentifier>{7bb2a94c-a7a3-40da-b9b4-f94e3128d89d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\src\addrvec.c">
@@ -741,6 +753,39 @@
     <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\tests\test_util.c">
       <Filter>src\modules\redisraft\tests</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\src\raft_log.c">
+      <Filter>src\modules\redisraft\raft\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\src\raft_node.c">
+      <Filter>src\modules\redisraft\raft\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\src\raft_server.c">
+      <Filter>src\modules\redisraft\raft\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\src\raft_server_properties.c">
+      <Filter>src\modules\redisraft\raft\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\tests\CuTest.c">
+      <Filter>src\modules\redisraft\raft\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\tests\mock_send_functions.c">
+      <Filter>src\modules\redisraft\raft\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\tests\test_log.c">
+      <Filter>src\modules\redisraft\raft\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\tests\test_node.c">
+      <Filter>src\modules\redisraft\raft\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\tests\test_scenario.c">
+      <Filter>src\modules\redisraft\raft\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\tests\test_server.c">
+      <Filter>src\modules\redisraft\raft\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\tests\test_snapshotting.c">
+      <Filter>src\modules\redisraft\raft\tests</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\src\addrvec.h">
@@ -1328,6 +1373,24 @@
     <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\src\version.h">
       <Filter>src\modules\redisraft\src</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\include\raft.h">
+      <Filter>src\modules\redisraft\raft\inclucde</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\include\raft_log.h">
+      <Filter>src\modules\redisraft\raft\inclucde</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\include\raft_private.h">
+      <Filter>src\modules\redisraft\raft\inclucde</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\include\raft_types.h">
+      <Filter>src\modules\redisraft\raft\inclucde</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\tests\CuTest.h">
+      <Filter>src\modules\redisraft\raft\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\tests\mock_send_functions.h">
+      <Filter>src\modules\redisraft\raft\tests</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\src\hashtable\LICENSE.txt">
@@ -1439,6 +1502,21 @@
     </None>
     <None Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\docs\Using.md">
       <Filter>src\modules\redisraft\docs</Filter>
+    </None>
+    <None Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\README.rst">
+      <Filter>src\modules\redisraft\raft</Filter>
+    </None>
+    <None Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\tests\log_fuzzer.py">
+      <Filter>src\modules\redisraft\raft\tests</Filter>
+    </None>
+    <None Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\tests\raft_cffi.py">
+      <Filter>src\modules\redisraft\raft\tests</Filter>
+    </None>
+    <None Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\tests\virtraft2.py">
+      <Filter>src\modules\redisraft\raft\tests</Filter>
+    </None>
+    <None Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\tests\make-tests.sh">
+      <Filter>src\modules\redisraft\raft\tests</Filter>
     </None>
   </ItemGroup>
 </Project>
