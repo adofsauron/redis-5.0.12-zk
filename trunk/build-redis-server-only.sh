@@ -7,8 +7,6 @@ REDIS_DIR=redis-5.0.12
 
 cd $REDIS_DIR
 
-
-
 make clean
 
 ARCH=`uname -m`

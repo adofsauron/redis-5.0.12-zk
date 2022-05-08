@@ -52,6 +52,19 @@ rm ./src/deps/lua/src/*.o -f
 rm ./src/deps/lua/src/liblua.a -f
 rm ./src/deps/linenoise/*.o -f
 
+# deps
+
+cd deps
+
+make distclean
+make hiredis
+make linenoise
+make lua
+
+cd -
+
+# redis-server
+
 ARCH=`uname -m`
 echo `date` $ARCH
 
