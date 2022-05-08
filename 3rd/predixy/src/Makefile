@@ -1,5 +1,5 @@
 CXX ?= g++
-LVL ?= -g -O3
+LVL ?= -ggdb3 -O0
 Opts += $(LVL)
 
 ifeq ($(MT), false)
@@ -12,7 +12,7 @@ endif
 
 EV ?= auto
 
-LDLIBCPP = -static-libstdc++
+LDLIBCPP = -lstdc++
 
 ifeq ($(EV), auto)
 	plt = $(shell uname)

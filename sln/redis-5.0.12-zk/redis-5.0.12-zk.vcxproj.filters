@@ -82,6 +82,15 @@
     <Filter Include="src\modules\redisraft\raft\tests">
       <UniqueIdentifier>{7bb2a94c-a7a3-40da-b9b4-f94e3128d89d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="3rd">
+      <UniqueIdentifier>{98dcd383-1b08-49f9-960b-6cee8003bd51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\predixy">
+      <UniqueIdentifier>{4a02863b-d721-4787-996e-41413baa6eb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\predixy\src">
+      <UniqueIdentifier>{e39e0acb-335b-47d8-a5d4-30eed63d37fb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\src\addrvec.c">
@@ -786,6 +795,132 @@
     <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\tests\test_snapshotting.c">
       <Filter>src\modules\redisraft\raft\tests</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\AcceptConnection.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\AcceptSocket.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\Alloc.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\Auth.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\Buffer.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\ClusterNodesParser.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\ClusterServerPool.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\Command.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\Conf.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\ConfParser.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\ConnectConnection.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\ConnectConnectionPool.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\Connection.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\ConnectSocket.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\Crc16.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\DC.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\Distribution.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\Enums.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\EpollMultiplexor.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\Handler.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\HashFunc.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\KqueueMultiplexor.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\LatencyMonitor.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\ListenSocket.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\LogFileSink.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\Logger.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\main.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\PollMultiplexor.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\Proxy.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\Reply.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\Request.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\RequestParser.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\Response.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\ResponseParser.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\SentinelServerPool.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\Server.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\ServerGroup.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\ServerPool.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\Socket.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\StandaloneServerPool.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\Subscribe.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\predixy\src\Timer.cpp">
+      <Filter>3rd\predixy\src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\src\addrvec.h">
@@ -1391,6 +1526,168 @@
     <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\tests\mock_send_functions.h">
       <Filter>src\modules\redisraft\raft\tests</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\AcceptConnection.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\AcceptSocket.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\Alloc.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\Auth.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\Backtrace.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\Buffer.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\ClusterNodesParser.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\ClusterServerPool.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\Command.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\Common.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\Conf.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\ConfParser.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\ConnectConnection.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\ConnectConnectionPool.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\Connection.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\ConnectSocket.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\DC.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\Deque.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\Distribution.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\Enums.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\EpollMultiplexor.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\Exception.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\Handler.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\HashFunc.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\ID.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\IOVec.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\KqueueMultiplexor.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\LatencyMonitor.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\List.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\ListenSocket.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\LogFileSink.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\Logger.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\Multiplexor.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\PollMultiplexor.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\Predixy.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\Proxy.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\Reply.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\Request.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\RequestParser.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\Response.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\ResponseParser.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\SentinelServerPool.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\Server.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\ServerGroup.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\ServerPool.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\Socket.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\StandaloneServerPool.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\Stats.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\String.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\Subscribe.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\Sync.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\Timer.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\Transaction.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\predixy\src\Util.h">
+      <Filter>3rd\predixy\src</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\src\hashtable\LICENSE.txt">
@@ -1517,6 +1814,18 @@
     </None>
     <None Include="..\..\trunk\redis-5.0.12\src\modules\redisraft\raft\tests\make-tests.sh">
       <Filter>src\modules\redisraft\raft\tests</Filter>
+    </None>
+    <None Include="..\..\3rd\predixy\src\Makefile">
+      <Filter>3rd\predixy\src</Filter>
+    </None>
+    <None Include="..\..\3rd\predixy\Makefile">
+      <Filter>3rd\predixy</Filter>
+    </None>
+    <None Include="..\..\3rd\predixy\README.md">
+      <Filter>3rd\predixy</Filter>
+    </None>
+    <None Include="..\..\3rd\predixy\README_CN.md">
+      <Filter>3rd\predixy</Filter>
     </None>
   </ItemGroup>
 </Project>
