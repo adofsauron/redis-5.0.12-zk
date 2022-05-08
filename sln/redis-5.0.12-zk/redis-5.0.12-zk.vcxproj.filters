@@ -34,6 +34,30 @@
     <Filter Include="deps\hiredis\examples">
       <UniqueIdentifier>{3d243a30-50c1-4632-ac0f-6b4051239314}</UniqueIdentifier>
     </Filter>
+    <Filter Include="deps\gperftools-2.9.1">
+      <UniqueIdentifier>{d2d7e2bb-d528-4867-852e-20d2ef119b85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\gperftools-2.9.1\src">
+      <UniqueIdentifier>{545fd313-7b59-4dac-9c2c-7614319aa52f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\gperftools-2.9.1\src\base">
+      <UniqueIdentifier>{0b710f3a-d29c-4d45-a73d-25155eee70e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\gperftools-2.9.1\src\google">
+      <UniqueIdentifier>{181884c0-d7b3-4eaf-9d67-2def354b93a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\gperftools-2.9.1\src\gperftools">
+      <UniqueIdentifier>{4ae67f0d-5428-4564-89d6-d293047ebdbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\gperftools-2.9.1\src\tests">
+      <UniqueIdentifier>{8d4803ad-a3b8-4a49-8c49-9f238825c8c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\gperftools-2.9.1\src\windows">
+      <UniqueIdentifier>{f494d3f5-f7d4-4dbb-a530-1cd71fe047d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\gperftools-2.9.1\src\windows\gperftools">
+      <UniqueIdentifier>{4678f5bc-d5c8-47da-abab-5a0fbe1421f7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\src\addrvec.c">
@@ -372,6 +396,267 @@
     <ClCompile Include="..\..\trunk\redis-5.0.12\deps\hiredis\examples\example-qt.cpp">
       <Filter>deps\hiredis\examples</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\central_freelist.cc">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\common.cc">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\debugallocation.cc">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\emergency_malloc.cc">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\emergency_malloc_for_stacktrace.cc">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\fake_stacktrace_scope.cc">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\heap-checker.cc">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\heap-checker-bcad.cc">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\heap-profiler.cc">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\heap-profile-table.cc">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\internal_logging.cc">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\malloc_extension.cc">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\malloc_hook.cc">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\maybe_threads.cc">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\memfs_malloc.cc">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\memory_region_map.cc">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\page_heap.cc">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\profiledata.cc">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\profile-handler.cc">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\profiler.cc">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\raw_printer.cc">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\sampler.cc">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\span.cc">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\stack_trace_table.cc">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\stacktrace.cc">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\static_vars.cc">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\symbolize.cc">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\system-alloc.cc">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tcmalloc.cc">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\thread_cache.cc">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\windows\addr2line-pdb.c">
+      <Filter>deps\gperftools-2.9.1\src\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\windows\get_mangled_names.cc">
+      <Filter>deps\gperftools-2.9.1\src\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\windows\ia32_modrm_map.cc">
+      <Filter>deps\gperftools-2.9.1\src\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\windows\ia32_opcode_map.cc">
+      <Filter>deps\gperftools-2.9.1\src\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\windows\mini_disassembler.cc">
+      <Filter>deps\gperftools-2.9.1\src\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\windows\nm-pdb.c">
+      <Filter>deps\gperftools-2.9.1\src\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\windows\override_functions.cc">
+      <Filter>deps\gperftools-2.9.1\src\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\windows\patch_functions.cc">
+      <Filter>deps\gperftools-2.9.1\src\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\windows\port.cc">
+      <Filter>deps\gperftools-2.9.1\src\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\windows\preamble_patcher.cc">
+      <Filter>deps\gperftools-2.9.1\src\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\windows\preamble_patcher_test.cc">
+      <Filter>deps\gperftools-2.9.1\src\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\windows\preamble_patcher_with_stub.cc">
+      <Filter>deps\gperftools-2.9.1\src\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\windows\system-alloc.cc">
+      <Filter>deps\gperftools-2.9.1\src\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\addressmap_unittest.cc">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\atomicops_unittest.cc">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\current_allocated_bytes_test.cc">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\debugallocation_test.cc">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\frag_unittest.cc">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\getpc_test.cc">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\heap-checker_unittest.cc">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\heap-profiler_unittest.cc">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\large_heap_fragmentation_unittest.cc">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\low_level_alloc_unittest.cc">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\malloc_extension_c_test.c">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\malloc_extension_test.cc">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\malloc_hook_test.cc">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\markidle_unittest.cc">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\memalign_unittest.cc">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\packed-cache_test.cc">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\page_heap_test.cc">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\pagemap_unittest.cc">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\profiledata_unittest.cc">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\profile-handler_unittest.cc">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\profiler_unittest.cc">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\raw_printer_test.cc">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\realloc_unittest.cc">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\sampler_test.cc">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\sampling_test.cc">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\simple_compat_test.cc">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\stack_trace_table_test.cc">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\stacktrace_unittest.cc">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\system-alloc_unittest.cc">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\tcmalloc_large_unittest.cc">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\tcmalloc_unittest.cc">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\testutil.cc">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\thread_dealloc_unittest.cc">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\atomicops-internals-x86.cc">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\dynamic_annotations.c">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\elf_mem_image.cc">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\linuxthreads.cc">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\logging.cc">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\low_level_alloc.cc">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\spinlock.cc">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\spinlock_internal.cc">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\sysinfo.cc">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\thread_lister.c">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\vdso_support.cc">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\src\addrvec.h">
@@ -617,6 +902,330 @@
     <ClInclude Include="..\..\trunk\redis-5.0.12\deps\hiredis\examples\example-qt.h">
       <Filter>deps\hiredis\examples</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\addressmap-inl.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\central_freelist.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\common.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\config_for_unittests.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\emergency_malloc.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\getenv_safe.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\getpc.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\heap-profile-stats.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\heap-profile-table.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\internal_logging.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\libc_override.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\libc_override_gcc_and_weak.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\libc_override_glibc.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\libc_override_osx.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\libc_override_redefine.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\linked_list.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\malloc_hook_mmap_freebsd.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\malloc_hook_mmap_linux.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\malloc_hook-inl.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\maybe_emergency_malloc.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\maybe_threads.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\memory_region_map.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\packed-cache-inl.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\page_heap.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\page_heap_allocator.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\pagemap.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\profiledata.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\profile-handler.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\raw_printer.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\sampler.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\span.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\stack_trace_table.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\stacktrace_arm-inl.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\stacktrace_generic_fp-inl.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\stacktrace_generic-inl.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\stacktrace_impl_setup-inl.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\stacktrace_instrument-inl.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\stacktrace_libgcc-inl.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\stacktrace_libunwind-inl.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\stacktrace_powerpc-darwin-inl.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\stacktrace_powerpc-inl.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\stacktrace_powerpc-linux-inl.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\stacktrace_win32-inl.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\stacktrace_x86-inl.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\static_vars.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\symbolize.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\system-alloc.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tcmalloc.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tcmalloc_guard.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\thread_cache.h">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\windows\gperftools\tcmalloc.h">
+      <Filter>deps\gperftools-2.9.1\src\windows\gperftools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\windows\auto_testing_hook.h">
+      <Filter>deps\gperftools-2.9.1\src\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\windows\config.h">
+      <Filter>deps\gperftools-2.9.1\src\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\windows\mingw.h">
+      <Filter>deps\gperftools-2.9.1\src\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\windows\mini_disassembler.h">
+      <Filter>deps\gperftools-2.9.1\src\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\windows\mini_disassembler_types.h">
+      <Filter>deps\gperftools-2.9.1\src\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\windows\port.h">
+      <Filter>deps\gperftools-2.9.1\src\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\windows\preamble_patcher.h">
+      <Filter>deps\gperftools-2.9.1\src\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\testutil.h">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\gperftools\heap-checker.h">
+      <Filter>deps\gperftools-2.9.1\src\gperftools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\gperftools\heap-profiler.h">
+      <Filter>deps\gperftools-2.9.1\src\gperftools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\gperftools\malloc_extension.h">
+      <Filter>deps\gperftools-2.9.1\src\gperftools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\gperftools\malloc_extension_c.h">
+      <Filter>deps\gperftools-2.9.1\src\gperftools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\gperftools\malloc_hook.h">
+      <Filter>deps\gperftools-2.9.1\src\gperftools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\gperftools\malloc_hook_c.h">
+      <Filter>deps\gperftools-2.9.1\src\gperftools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\gperftools\nallocx.h">
+      <Filter>deps\gperftools-2.9.1\src\gperftools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\gperftools\profiler.h">
+      <Filter>deps\gperftools-2.9.1\src\gperftools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\gperftools\stacktrace.h">
+      <Filter>deps\gperftools-2.9.1\src\gperftools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\google\heap-checker.h">
+      <Filter>deps\gperftools-2.9.1\src\google</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\google\heap-profiler.h">
+      <Filter>deps\gperftools-2.9.1\src\google</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\google\malloc_extension.h">
+      <Filter>deps\gperftools-2.9.1\src\google</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\google\malloc_extension_c.h">
+      <Filter>deps\gperftools-2.9.1\src\google</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\google\malloc_hook.h">
+      <Filter>deps\gperftools-2.9.1\src\google</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\google\malloc_hook_c.h">
+      <Filter>deps\gperftools-2.9.1\src\google</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\google\profiler.h">
+      <Filter>deps\gperftools-2.9.1\src\google</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\google\stacktrace.h">
+      <Filter>deps\gperftools-2.9.1\src\google</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\google\tcmalloc.h">
+      <Filter>deps\gperftools-2.9.1\src\google</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\arm_instruction_set_select.h">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\atomicops.h">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\atomicops-internals-arm-generic.h">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\atomicops-internals-arm-v6plus.h">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\atomicops-internals-gcc.h">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\atomicops-internals-linuxppc.h">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\atomicops-internals-macosx.h">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\atomicops-internals-mips.h">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\atomicops-internals-windows.h">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\atomicops-internals-x86.h">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\basictypes.h">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\commandlineflags.h">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\dynamic_annotations.h">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\elf_mem_image.h">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\elfcore.h">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\googleinit.h">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\linux_syscall_support.h">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\linuxthreads.h">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\logging.h">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\low_level_alloc.h">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\simple_mutex.h">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\spinlock.h">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\spinlock_internal.h">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\spinlock_linux-inl.h">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\spinlock_posix-inl.h">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\spinlock_win32-inl.h">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\stl_allocator.h">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\sysinfo.h">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\thread_annotations.h">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\thread_lister.h">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\base\vdso_support.h">
+      <Filter>deps\gperftools-2.9.1\src\base</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\src\hashtable\LICENSE.txt">
@@ -662,6 +1271,45 @@
     </None>
     <None Include="..\..\trunk\redis-5.0.12\deps\update-jemalloc.sh">
       <Filter>deps</Filter>
+    </None>
+    <None Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\config.h.in">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </None>
+    <None Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\pprof">
+      <Filter>deps\gperftools-2.9.1\src</Filter>
+    </None>
+    <None Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\windows\gperftools\tcmalloc.h.in">
+      <Filter>deps\gperftools-2.9.1\src\windows\gperftools</Filter>
+    </None>
+    <None Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\windows\shortproc.asm">
+      <Filter>deps\gperftools-2.9.1\src\windows</Filter>
+    </None>
+    <None Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\debugallocation_test.sh">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </None>
+    <None Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\heap-checker_unittest.sh">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </None>
+    <None Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\heap-checker-death_unittest.sh">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </None>
+    <None Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\heap-profiler_unittest.sh">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </None>
+    <None Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\maybe_threads_unittest.sh">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </None>
+    <None Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\profiler_unittest.sh">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </None>
+    <None Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\sampling_test.sh">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </None>
+    <None Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\tests\tcmalloc_unittest.sh">
+      <Filter>deps\gperftools-2.9.1\src\tests</Filter>
+    </None>
+    <None Include="..\..\trunk\redis-5.0.12\deps\gperftools-2.9.1\src\gperftools\tcmalloc.h.in">
+      <Filter>deps\gperftools-2.9.1\src\gperftools</Filter>
     </None>
   </ItemGroup>
 </Project>
