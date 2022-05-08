@@ -75,6 +75,22 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
   <ItemGroup>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\hiredis\async.c" />
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\hiredis\dict.c" />
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\hiredis\examples\example-ae.c" />
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\hiredis\examples\example-glib.c" />
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\hiredis\examples\example-ivykis.c" />
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\hiredis\examples\example-libev.c" />
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\hiredis\examples\example-libevent.c" />
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\hiredis\examples\example-libuv.c" />
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\hiredis\examples\example-macosx.c" />
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\hiredis\examples\example-qt.cpp" />
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\hiredis\examples\example.c" />
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\hiredis\hiredis.c" />
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\hiredis\net.c" />
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\hiredis\read.c" />
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\hiredis\sds.c" />
+    <ClCompile Include="..\..\trunk\redis-5.0.12\deps\hiredis\test.c" />
     <ClCompile Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\src\addrvec.c" />
     <ClCompile Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\src\cli.c" />
     <ClCompile Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\src\hashtable\hashtable.c" />
@@ -173,6 +189,24 @@
     <ClCompile Include="..\..\trunk\redis-5.0.12\src\zmalloc.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\hiredis\adapters\ae.h" />
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\hiredis\adapters\glib.h" />
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\hiredis\adapters\ivykis.h" />
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\hiredis\adapters\libev.h" />
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\hiredis\adapters\libevent.h" />
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\hiredis\adapters\libuv.h" />
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\hiredis\adapters\macosx.h" />
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\hiredis\adapters\qt.h" />
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\hiredis\async.h" />
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\hiredis\dict.h" />
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\hiredis\examples\example-qt.h" />
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\hiredis\fmacros.h" />
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\hiredis\hiredis.h" />
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\hiredis\net.h" />
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\hiredis\read.h" />
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\hiredis\sds.h" />
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\hiredis\sdsalloc.h" />
+    <ClInclude Include="..\..\trunk\redis-5.0.12\deps\hiredis\win32.h" />
     <ClInclude Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\include\config.h" />
     <ClInclude Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\include\proto.h" />
     <ClInclude Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\include\recordio.h" />
@@ -241,6 +275,13 @@
     <Text Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\src\hashtable\LICENSE.txt" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\trunk\redis-5.0.12\deps\hiredis\CHANGELOG.md" />
+    <None Include="..\..\trunk\redis-5.0.12\deps\hiredis\COPYING" />
+    <None Include="..\..\trunk\redis-5.0.12\deps\hiredis\Makefile" />
+    <None Include="..\..\trunk\redis-5.0.12\deps\hiredis\README.md" />
+    <None Include="..\..\trunk\redis-5.0.12\deps\Makefile" />
+    <None Include="..\..\trunk\redis-5.0.12\deps\README.md" />
+    <None Include="..\..\trunk\redis-5.0.12\deps\update-jemalloc.sh" />
     <None Include="..\..\trunk\redis-5.0.12\src\Makefile" />
     <None Include="..\..\trunk\redis-5.0.12\src\mkreleasehdr.sh" />
     <None Include="..\..\trunk\redis-5.0.12\src\modules\gendoc.rb" />
