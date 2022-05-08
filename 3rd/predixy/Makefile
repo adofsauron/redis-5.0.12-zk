@@ -15,5 +15,8 @@ default:
 debug:
 	@$(make) -C src -f Makefile debug
 
+install:
+	@$(make) -C src -f Makefile install
+
 clean:
 	@$(make) -C src -f Makefile clean

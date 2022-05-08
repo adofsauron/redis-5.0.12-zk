@@ -109,6 +109,9 @@ clean:
 	@rm -rf $(objs) $(target)
 	@echo Done.
 
+install:
+	@cp ./predixy /usr/bin/
+
 %.o : %.cpp
 	$(CXX) $(CFLAGS) -c $^ $(INCFLAGS)
 
