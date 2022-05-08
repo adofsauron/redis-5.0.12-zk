@@ -1,0 +1,24 @@
+display_name: RedisTimeSeries
+author: Redis
+email: danni@redis.com
+description: A time series database for Redis
+homepage: https://oss.redis.com/redistimeseries/
+license: Redis Source Available License Agreement
+command_line_args: ""
+min_redis_version: "6.0"
+min_redis_pack_version: "6.2.8"
+capabilities:
+    - types
+    - replica_of
+    - backup_restore
+    - hash_policy
+    - eviction_expiry
+    - failover_migrate
+    - persistence_aof
+    - persistence_rdb
+    - hash_policy
+    - clustering
+    - reshard_rebalance
+    - intershard_tls
+    - intershard_tls_pass
+    - flash

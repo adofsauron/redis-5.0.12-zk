@@ -1,0 +1,74 @@
+-- Blocking commands not supported
+BLPOP with variadic LPUSH
+Linked LMOVEs
+client unblock tests
+.*B[RL]POP.*
+.*B[RLZ]MPOP.*
+.*BLMOVE.*
+.*B[LR]POP.*
+.*BZM?POP_?MIN.*
+.*BZM?POP_?MAX.*
+LPOP/RPOP/LMPOP NON-BLOCK or BLOCK against non list value
+
+-- Streams not supported
+-- See: https://github.com/RedisLabs/redisraft/issues/59
+.*XREAD.*
+.*XADD.*
+.*XRANGE.*
+COPY basic usage for stream
+Keyspace notifications: stream events test
+lazy free a stream with all types of metadata
+lazy free a stream with deleted cgroup
+
+-- Timeouts and termination of Lua scripts is not possible when scripts are
+-- replicated and executed by individual nodes.
+.*SCRIPT KILL.*
+Blocking commands ignores the timeout
+Timedout script does not cause a false dead client
+Timedout script link is still usable after Lua returns
+test function kill
+test function kill not working on eval
+test script kill not working on function
+test wrong subcommand
+
+-- RAFT command prefix shows up in SLOWLOG.
+SLOWLOG - Rewritten commands are logged as their original command
+
+-- RAFT command prefix shows up in MONITOR
+MONITOR can log executed commands
+MONITOR can log commands issued by the scripting engine
+MONITOR correctly handles multi-exec cases
+
+-- TODO: check what's wrong
+UNLINK can reclaim memory in background
+
+-- TODO: fix maxmemory config replication and set deny-oom flag for write
+--       "raft" commands
+Script - disallow write on OOM
+FUNCTION - verify OOM on function load and function restore
+FUNCTION - deny oom
+FUNCTION - deny oom on no-writes function
+allow-oom shebang flag
+reject script do not cause a Lua stack leak
+
+-- ACL test fails because we prepend "raft" string to the command
+Script ACL check
+
+-- Blocked clients not supported
+Test read commands are not blocked by client pause
+Test write commands are paused by RO
+
+-- WATCH (multi/exec) not supported
+.*MULTI.*
+.*EXEC.*
+.*WATCH.*
+SMOVE only notify dstset when the addition is successful
+FLUSHALL is able to touch the watched keys
+FLUSHDB is able to touch the watched keys
+client evicted due to watched key list
+FLUSHALL does not touch non affected keys
+FLUSHDB does not touch non affected keys
+SWAPDB is able to touch the watched keys that exist
+SWAPDB is able to touch the watched keys that do not exist
+
+
