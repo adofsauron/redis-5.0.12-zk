@@ -1242,9 +1242,6 @@
     <None Include="..\..\trunk\redis-5.0.12\src\redis-trib.rb">
       <Filter>src</Filter>
     </None>
-    <None Include="..\..\trunk\redis-5.0.12\src\valgrind.sup">
-      <Filter>src</Filter>
-    </None>
     <None Include="..\..\trunk\redis-5.0.12\src\modules\gendoc.rb">
       <Filter>src\modules</Filter>
     </None>

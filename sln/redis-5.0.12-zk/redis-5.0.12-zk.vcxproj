@@ -495,7 +495,6 @@
     <None Include="..\..\trunk\redis-5.0.12\src\modules\gendoc.rb" />
     <None Include="..\..\trunk\redis-5.0.12\src\modules\Makefile" />
     <None Include="..\..\trunk\redis-5.0.12\src\redis-trib.rb" />
-    <None Include="..\..\trunk\redis-5.0.12\src\valgrind.sup" />
   </ItemGroup>
   <ItemDefinitionGroup />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
