@@ -91,6 +91,21 @@
     <Filter Include="3rd\predixy\src">
       <UniqueIdentifier>{e39e0acb-335b-47d8-a5d4-30eed63d37fb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\modules\RedisTimeSeries">
+      <UniqueIdentifier>{5d4e0182-3f06-4719-9d71-1ef48a76bcda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\RedisTimeSeries\src">
+      <UniqueIdentifier>{642a81a6-e484-4c81-9a07-c00471ce9182}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\RedisTimeSeries\src\compactions">
+      <UniqueIdentifier>{375148dc-e5c5-4f31-8b2a-78eb95d9021a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\RedisTimeSeries\src\fast_double_parser_c">
+      <UniqueIdentifier>{779a9ba7-1be4-40c1-a0ff-f8b8dc0021e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\RedisTimeSeries\src\utils">
+      <UniqueIdentifier>{92a48b82-24bd-4e47-807f-61972ed4bdeb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\src\addrvec.c">
@@ -921,6 +936,111 @@
     <ClCompile Include="..\..\3rd\predixy\src\Timer.cpp">
       <Filter>3rd\predixy\src</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\compactions\compaction_avx.c">
+      <Filter>src\modules\RedisTimeSeries\src\compactions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\compactions\compaction_avx2.c">
+      <Filter>src\modules\RedisTimeSeries\src\compactions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\compactions\compaction_avx512f.c">
+      <Filter>src\modules\RedisTimeSeries\src\compactions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\compactions\compaction_sse.c">
+      <Filter>src\modules\RedisTimeSeries\src\compactions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\compactions\compaction_sse2.c">
+      <Filter>src\modules\RedisTimeSeries\src\compactions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\compactions\compaction_sse3.c">
+      <Filter>src\modules\RedisTimeSeries\src\compactions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\compactions\compaction_sse4_1.c">
+      <Filter>src\modules\RedisTimeSeries\src\compactions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\compactions\compaction_sse4_2.c">
+      <Filter>src\modules\RedisTimeSeries\src\compactions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\compactions\compaction_sse4a.c">
+      <Filter>src\modules\RedisTimeSeries\src\compactions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\fast_double_parser_c\fast_double_parser_c.cpp">
+      <Filter>src\modules\RedisTimeSeries\src\fast_double_parser_c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\utils\arch_features.c">
+      <Filter>src\modules\RedisTimeSeries\src\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\aggregated_iterator.c">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\chunk.c">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\compaction.c">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\compressed_chunk.c">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\compressed_test.c">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\config.c">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\endianconv.c">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\enriched_chunk.c">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\filter_iterator.c">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\generic_chunk.c">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\gorilla.c">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\indexer.c">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\libmr_commands.c">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\libmr_integration.c">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\module.c">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\parse_policies.c">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\query_language.c">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\rdb.c">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\reply.c">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\resultset.c">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\sample_iterator.c">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\series_iterator.c">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\short_read.c">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\tsdb.c">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\src\addrvec.h">
@@ -1688,6 +1808,129 @@
     <ClInclude Include="..\..\3rd\predixy\src\Util.h">
       <Filter>3rd\predixy\src</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\compactions\compaction_avx.h">
+      <Filter>src\modules\RedisTimeSeries\src\compactions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\compactions\compaction_avx2.h">
+      <Filter>src\modules\RedisTimeSeries\src\compactions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\compactions\compaction_avx512f.h">
+      <Filter>src\modules\RedisTimeSeries\src\compactions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\compactions\compaction_common.h">
+      <Filter>src\modules\RedisTimeSeries\src\compactions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\compactions\compaction_sse.h">
+      <Filter>src\modules\RedisTimeSeries\src\compactions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\compactions\compaction_sse2.h">
+      <Filter>src\modules\RedisTimeSeries\src\compactions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\compactions\compaction_sse3.h">
+      <Filter>src\modules\RedisTimeSeries\src\compactions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\compactions\compaction_sse4_1.h">
+      <Filter>src\modules\RedisTimeSeries\src\compactions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\compactions\compaction_sse4_2.h">
+      <Filter>src\modules\RedisTimeSeries\src\compactions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\compactions\compaction_sse4a.h">
+      <Filter>src\modules\RedisTimeSeries\src\compactions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\fast_double_parser_c\fast_double_parser_c.h">
+      <Filter>src\modules\RedisTimeSeries\src\fast_double_parser_c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\utils\arch_features.h">
+      <Filter>src\modules\RedisTimeSeries\src\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\utils\arr.h">
+      <Filter>src\modules\RedisTimeSeries\src\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\abstract_iterator.h">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\aggregated_iterator.h">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\chunk.h">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\common.h">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\compaction.h">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\compressed_chunk.h">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\config.h">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\consts.h">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\endianconv.h">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\enriched_chunk.h">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\filter_iterator.h">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\generic_chunk.h">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\gorilla.h">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\indexer.h">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\libmr_commands.h">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\libmr_integration.h">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\load_io_error_macros.h">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\module.h">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\parse_policies.h">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\query_language.h">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\rdb.h">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\reply.h">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\resultset.h">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\sample_iterator.h">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\series_iterator.h">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\short_read.h">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\tsdb.h">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\version.h">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\..\trunk\redis-5.0.12\deps\zkcli\zookeeper-client-c\src\hashtable\LICENSE.txt">
@@ -1826,6 +2069,9 @@
     </None>
     <None Include="..\..\3rd\predixy\README_CN.md">
       <Filter>3rd\predixy</Filter>
+    </None>
+    <None Include="..\..\trunk\redis-5.0.12\src\modules\RedisTimeSeries\src\Makefile">
+      <Filter>src\modules\RedisTimeSeries\src</Filter>
     </None>
   </ItemGroup>
 </Project>
