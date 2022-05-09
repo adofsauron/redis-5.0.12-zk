@@ -1,0 +1,5 @@
+
+*** FATAL CONFIG FILE ERROR (Redis 6.2.3) ***
+Reading the configuration file, at line 31
+>>> 'zk_port 2223'
+Bad directive or wrong number of arguments
