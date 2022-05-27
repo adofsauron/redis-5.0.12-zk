@@ -31,3 +31,5 @@ m4/
 *.gif
 *.dot
 m4/
+*.c.o.d
+*.cmake
