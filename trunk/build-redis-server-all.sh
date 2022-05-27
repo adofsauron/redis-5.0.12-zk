@@ -11,6 +11,7 @@ cd $REDIS_DIR
 # zkcli
 
 cd deps/zkcli
+dos2unix ./*
 bash build.sh
 
 cd -

@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/cli.dir/src/cli.c.o -o cli  libzookeeper.a libhashtable.a -lm -lrt /usr/lib/x86_64-linux-gnu/libssl.so /usr/lib/x86_64-linux-gnu/libcrypto.so -lpthread 
