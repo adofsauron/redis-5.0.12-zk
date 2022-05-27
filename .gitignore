@@ -2,6 +2,7 @@
 *.dump
 nodes.conf
 *.aof
+*.rdb
 *.pid
 .vscode/
 .vs/
