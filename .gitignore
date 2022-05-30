@@ -34,3 +34,4 @@ m4/
 m4/
 *.c.o.d
 *.cmake
+CmakeFiles/

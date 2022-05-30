@@ -138,3 +138,4 @@ cp ./redis-sentinel /usr/bin/ -f
 
 echo `date` cp ./redis-cli /usr/bin/ -f
 cp ./redis-cli /usr/bin/ -f
+
