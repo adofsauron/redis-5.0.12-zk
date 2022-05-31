@@ -42,3 +42,8 @@ redis-check-rdb
 redis-cli
 redis-sentinel
 redis-server
+3rd/nginx/nginx
+auto/
+html/
+objs/
+
