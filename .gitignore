@@ -36,4 +36,3 @@ m4/
 *.cmake
 CmakeFiles/
 docs/
-trunk/redis-5.0.12/deps/gperftools-2.9.1/
