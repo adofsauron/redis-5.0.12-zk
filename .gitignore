@@ -37,3 +37,8 @@ m4/
 CMakeFiles/
 docs/
 CmakeCache.txt
+redis-check-aof
+redis-check-rdb
+redis-cli
+redis-sentinel
+redis-server
