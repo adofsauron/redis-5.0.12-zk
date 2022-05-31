@@ -36,3 +36,4 @@ m4/
 *.cmake
 CmakeFiles/
 docs/
+CmakeCache.txt
