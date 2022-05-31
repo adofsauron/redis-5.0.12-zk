@@ -4,7 +4,10 @@ HERE=`pwd`
 
 cd nginx-1.21.1
 
+echo `date` find . -type f -exec sed -i 's/\r//' {} \;
 find . -type f -exec sed -i 's/\r//' {} \;
+
+echo `date` chmod +x ./configure
 chmod +x ./configure
 
 ./configure --prefix=/usr/bin --with-poll_module --with-file-aio --with-stream --without-pcre \
@@ -46,3 +49,6 @@ cd $HERE
 
 echo `date` cp nginx-1.21.1/objs/nginx ./ -rvf
 cp nginx-1.21.1/objs/nginx ./ -rvf
+
+echo `date` cp nginx /usr/bini -rvf
+cp nginx /usr/bini -rvf
